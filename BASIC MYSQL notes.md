@@ -1,3 +1,5 @@
+# Basic MYSQL notes
+
 <b>SELCECT</b> is the word that will pick all the columns has stated
 <pre>
 SELECT
