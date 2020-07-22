@@ -8,7 +8,7 @@ SELECT
   amount
 </pre>
 <p>it will show up the data of unit_price, name and amount columns</p>
-
+<br />
 <b>AS</b> is the keyword that setting the title for the column
 <pre>
 SELECT
@@ -18,13 +18,13 @@ SELECT
   unit_price * 10 * 0.9 AS "discount price"
 </pre>
 <p>it will show up as discount price instead of <i> unit_price * 10 * 0.9</i>and the data inside will calculate as the unit_price * 10 * 0.9</p>
-
+<br />
 <b>WHERE</b> is a keyword which is similar to the if else, setting a condition to show up the data that fullfill the requirement
 <pre>
 SELECT * WHERE  unit_price > 10
 </pre>
 <p>it will only show the items which unit_price larger than 10</p>
-
+<br />
 <b>AND</b> and <b>OR</b> is the keyword in MYSQL instead of using && and ||
 <pre>
 SELECT * WHERE  unit_price > 10 AND amount > 1000
