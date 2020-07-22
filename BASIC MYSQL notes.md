@@ -25,3 +25,22 @@ SELECT * WHERE  unit_price > 10
 </pre>
 <p>it will only show the items which unit_price larger than 10</p>
 
+<b>AND</b> and <b>OR</b> is the keyword in MYSQL instead of using && and ||
+<pre>
+SELECT * WHERE  unit_price > 10 AND amount > 1000
+</pre>
+<p>it will only show the items which unit_price larger than 10 <strong>and</strong> amount is over 1000</p>
+
+<pre>
+SELECT * WHERE  unit_price > 10 OR amount > 1000
+</pre>
+<p>it will only show the items which unit_price larger than 10 <strong>or</strong> amount is over 1000</p>
+
+<pre>
+SELECT * WHERE  unit_price > 10 OR amount > 1000 and name = 'ABC'
+</pre>
+<p>AND hava a higher order than or so it will look into the amount > 1000 and name = 'ABC' part first</p>
+<p>which same as 
+SELECT * WHERE  unit_price > 10 OR (amount > 1000 and name = 'ABC')</p>
+
+
