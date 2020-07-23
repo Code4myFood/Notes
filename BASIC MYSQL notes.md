@@ -43,4 +43,18 @@ SELECT * WHERE  unit_price > 10 OR amount > 1000 and name = 'ABC'
 <p>which same as 
 SELECT * WHERE  unit_price > 10 OR (amount > 1000 and name = 'ABC')</p>
 
+<br />
+<b>NULL</b> is the operator which there is a missing data
+<br />
 
+<b>LIKE</b> is the operator show the string have specific pattern
+<pre>
+SELECT *
+FROM table
+WHERE last name LIKE 'b%'
+</pre>
+<p>it will show the word starting with b</p>
+<p>% means there is any digit after the character and _ meant exact one digit after the character</p>
+<br />
+
+<b>REGEXP</b> is the operator show the string have specific pattern like the advance LIKE operator
