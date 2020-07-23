@@ -70,3 +70,59 @@ WHERE last_name REGEXP "field$|mon|rose"
   <li>[abcd]</li>
   <li>[a-h]</li>
 </ul>
+<br />
+<b>ORDER BY</b>is the operator for sorting 
+<pre>
+SELECT *
+FROM table
+ORDER BY name
+</pre>
+<p>the order will sorted by the name</p>
+<b>DESC</b> is the operator means decending order
+<pre>
+SELECT *
+FROM table
+ORDER BY name DESC
+</pre>
+<p>the order is sorted in descending order</p>
+<pre>
+SELECT *
+FROM table
+ORDER BY name, age
+</pre>
+<p>the data will sort in name first if the name is same then the order will be sorted in age</p>
+<br />
+<b>LIMIT</b>is the operator to set the number of data return 
+<pre>
+SELECT *
+FROM table
+LIMIT 3
+</pre>
+<p>only the first three data will return to the user</p>
+<br/>
+<pre>
+SELECT *
+FROM table
+LIMIT 5,3
+</pre>
+<p>only the first five data will be skipped, which data 6, 7, 8 will return to the user</p>
+<br />
+<b>BETWEEN</b> is the operator for the value in range
+<pre>
+SELECT *
+FROM table
+WHERE amount BETWEEN 0 and 10
+</pre>
+<p>the data which teh amount is within 0 to 10 will be returned</p>
+<br />
+<b>INNER JOIN</b> is the operator that link two table together
+<pre>
+SELECT customer.Name, order.OrderID
+FROM customers
+INNER JOIN order 
+ON orders.customer_id = customers.customer_id
+</pre>
+<p>if the data have the same customer_id in customers table and orders table. THhe customer Name will in the same row with the OrderID</p>
+<br />
+
+
