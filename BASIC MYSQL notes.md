@@ -58,3 +58,15 @@ WHERE last name LIKE 'b%'
 <br />
 
 <b>REGEXP</b> is the operator show the string have specific pattern like the advance LIKE operator
+<pre>
+SELECT *
+FROM table
+WHERE last_name REGEXP "field$|mon|rose"
+</pre>
+<ul>
+  <li>| logical or</li>
+  <li>$ end$</li>
+  <li>^ ^begin</li>
+  <li>[abcd]</li>
+  <li>[a-h]</li>
+</ul>
